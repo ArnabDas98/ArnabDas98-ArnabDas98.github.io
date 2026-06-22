@@ -1,0 +1,26 @@
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.activity-card {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.activity-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.activity-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.activity-card p {
+  color: var(--text-color);
+  line-height: 1.6;
+}

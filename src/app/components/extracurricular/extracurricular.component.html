@@ -1,0 +1,12 @@
+<section id="extracurricular" class="section">
+  <div class="container">
+    <h2 class="section-title">Leadership & Extracurricular</h2>
+    <div class="activities-grid">
+      <div class="card activity-card" *ngFor="let activity of activities">
+        <div class="activity-icon">{{ activity.icon }}</div>
+        <h3>{{ activity.title }}</h3>
+        <p>{{ activity.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

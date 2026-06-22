@@ -1,0 +1,22 @@
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="card edu-card" *ngFor="let edu of educations">
+        <div class="edu-header">
+          <div>
+            <h3 class="degree">{{ edu.degree }}</h3>
+            <h4 class="institution">{{ edu.institution }}</h4>
+          </div>
+          <div class="edu-meta">
+            <span class="period">{{ edu.period }}</span>
+            <span class="location">{{ edu.location }}</span>
+          </div>
+        </div>
+        <div class="edu-grade" *ngIf="edu.grade">
+          <span class="grade-badge">{{ edu.grade }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

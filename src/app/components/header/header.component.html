@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="container header-content">
+    <div class="logo">Arnab<span>Das</span></div>
+    <nav class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
+    <button class="theme-toggle" (click)="onToggleTheme()" aria-label="Toggle Theme">
+      <span *ngIf="isDarkMode">☀️ Light</span>
+      <span *ngIf="!isDarkMode">🌙 Dark</span>
+    </button>
+  </div>
+</header>
